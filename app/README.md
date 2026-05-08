@@ -20,6 +20,11 @@ The application will automatically open at `http://localhost:8501`
 
 **That's it! You're ready to make predictions.**
 
+### **OR** (streamlit cloud)
+
+Just enter on the link below to see a streamlit cloud deploy of the model.
+https://app-intelligent-techniques-churn.streamlit.app/
+
 ---
 
 ## **Features**
@@ -145,64 +150,6 @@ gender,senior_citizen,partner,dependents,tenure,phone_service,paperless_billing,
 ```
 
 **Sample test files are included** in the project for testing batch predictions.
-
----
-
-## Deployment Options
-
-### Option 1: Local Deployment (Current Setup)
-
-Already set up! Just run:
-
-```bash
-streamlit run churn.py
-```
-
-**Advantages:**
-
-- No additional setup needed
-- Full control over environment
-- Easy debugging
-
----
-
-### Option 2: Streamlit Cloud (Recommended for Demo)
-
-1. **Prepare repository**
-   - Push code to GitHub
-   - Include `requirements.txt`
-   - Include model files (under 600KB total, within GitHub limits)
-
-2. **Deploy on Streamlit Cloud**
-   - Visit [share.streamlit.io](https://share.streamlit.io)
-   - Connect GitHub repository
-   - Select `churnh.py` as main file
-   - Deploy
-
-3. **Access**
-   - Get public URL (e.g., `https://yourapp.streamlit.app`)
-   - Share with stakeholders
-
-**Advantages:**
-
-- Free hosting
-- Public URL for easy sharing
-- Auto-updates from GitHub
-- Zero infrastructure management
-
----
-
-### Option 3: Cloud Platforms
-
-#### AWS EC2
-
-```bash
-# On EC2 instance
-sudo apt update
-sudo apt install python3-pip
-pip3 install -r requirements.txt
-streamlit run churn.py --server.port=8501 --server.address=0.0.0.0
-```
 
 ---
 
