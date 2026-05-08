@@ -81,7 +81,15 @@ st.sidebar.markdown("### Model Performance")
 
 # Load model with error handling
 model_path = '../models/' if os.path.exists('../models/') else 'models/'
-if not os.path.exists(model_path.rstrip('/')):
+if os.path.exists('models/'):
+    model_path = 'models/'
+elif os.path.exists('../models/'):
+    model_path = '../models/'
+elif os.path.exists('./models/'):
+    model_path = './models/'
+elif os.path.exists('app/models/'):
+    model_path = 'app/models/'
+else:
     model_path = './'
 
 model = None
