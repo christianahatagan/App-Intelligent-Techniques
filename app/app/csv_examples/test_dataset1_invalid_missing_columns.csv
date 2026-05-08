@@ -1,6 +1,0 @@
-is_tv_subscriber,subscription_age,bill_avg,service_failure_count,download_avg,upload_avg
-1,12.5,45,0,50.0,5.0
-0,8.0,30,2,75.0,3.0
-1,15.0,38,1,40.0,4.0
-0,5.5,20,3,90.0,2.5
-1,18.0,55,0,35.0,6.0
